@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/resert.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bigData.css"/>
+	</head>
+	<body style="background:#000c3b;">
+		<img class="bg" src="img/global.png"/>
+		<canvas id="canv" width="1000" height="409" style="position: absolute;left: 0;top: 0;opacity: 0.18;"></canvas>
+		<script type="text/javascript" src="js/bling.js" ></script>
+		<div id="main">
+		<div class="nav">
+			<div class="nav_left">
+				<img  src="img/leftnav02.png" style="left: 0;" />
+				<img src="img/leftnav01.png" style="right: 0;"/>
+			</div>
+			<div class="nav_middle" style="">
+				<span style="color: #fff;" class="title">督导大数据统计平台</span>
+				<img src="img/middle_left.png" style="left:0;top: -3px;height: 59px;"/>
+				<img src="img/middle_left.png" style="right:0;top: -3px;transform: rotateY(180deg);    height: 59px;"/>
+			</div>
+			<div class="nav_right" style="">
+				<img src="img/leftnav02.png" style="position: absolute;right: 0;transform: rotateY(180deg);" />
+				<img src="img/leftnav01.png" style="position: absolute;left: 0;transform: rotate(270deg);"/>
+			</div>
+		</div>
+		<div class="row clearfix" style="margin-top: 20px;">
+		  <div class="box01 row_box" style="">
+		  	<i class="topL"></i>
+		  	<i class="topR"></i>
+		  	<i class="bottomL"></i>
+		  	<i class="bottomR"></i>
+		  	<div class="block_title">
+		  		<b class="block_title-left">[</b>
+		  		<span>各学段的学校数量</span>
+		  		<b class="block_title-right">]</b>
+		  </div>
+		  <div class="dr" style="overflow: auto;">
+		  <div class="clearfix" style="padding: 20px 10px 0;">
+			  <div class="circle">
+			  	<div class="cr">
+			  		<div id="kindergarten">108</div>
+			  		<p>幼儿园</p>
+			  	</div>
+			  </div>
+			   <div class="circle">
+			  	<div class="cr">
+			  		<div id="primary">12</div>
+			  		<p>义务教育学校</p>
+			  	</div>
+			  </div>
+			   <div class="circle">
+			  	<div class="cr">
+			  		<div id="secondary">56</div>
+			  		<p>特殊教育学校</p>
+			  	</div>
+			  </div>
+			   <div class="circle">
+			  	<div class="cr">
+			  		<div id="senior">78</div>
+			  		<p>普通高中</p>
+			  	</div>
+			  </div>
+			   <div class="circle">
+			  	<div class="cr">
+			  		<div id="vocational">90</div>
+			  		<p>职高</p>
+			  	</div>
+			  </div>
+			   <div class="circle">
+		  	  <div class="cr">
+		  		<div id="college">12</div>
+		  		<p>大学</p>
+		  	  </div>
+		  </div>
+		  
+		  <div class="circle">
+		  	<div class="cr">
+		  		<div id="college">12</div>
+		  		<p>大学</p>
+		  	</div>
+		  </div>
+		  <div class="circle">
+		  	<div class="cr">
+		  		<div id="college">12</div>
+		  		<p>大学</p>
+		  	</div>
+		  </div>
+		  </div>
+		  </div>
+		  </div>
+		  <div class="box02 row_box">
+			  	<i class="topL"></i>
+			  	<i class="topR"></i>
+			  	<i class="bottomL"></i>
+			  	<i class="bottomR"></i>
+			  	<div class="block_title">
+			  		<b class="block_title-left">[</b>
+			  		<span>各学段学校平均分横向对比</span>
+			  		<b class="block_title-right">]</b>
+			    </div>
+		        <div class="period" style="height: 243px;overflow: auto;">
+		        	<ul class="period_ul">
+		        		<li>
+		        			
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">幼儿园特殊教育学</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 100%;background: #ff7d50;">
+		        						<span class="sr-only">100% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">585</p>
+		        			</div>
+		        		</li>
+		        		
+		        		<li>
+		        			
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">义务教育特殊学校</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 70%;background: #bbff50;">
+		        						<span class="sr-only">70% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">437</p>
+		        			</div>
+		        		</li>
+		        		
+		        		<li>
+		        			
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">初中</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 65%;background: #13d1b1;">
+		        						<span class="sr-only">37% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">251</p>
+		        			</div>
+		        		</li>
+		        		
+		        		<li>
+		        			
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">高中</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 30%;background: #fc7293;">
+		        						<span class="sr-only">30% Complete (success)</span>
+		        					</div>
+		        					
+		        				</div>
+		        				<p  class="period_num">180</p>
+		        			</div>
+		        		</li>
+		        		
+		        		<li>
+		        			
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">职高</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 20%;">
+		        						<span class="sr-only">20% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">103</p>
+		        			</div>
+		        		</li>
+		        		<li>
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">大学</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 20%;background: #8378eb;">
+		        						<span class="sr-only">20% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">103</p>
+		        			</div>
+		        		</li>
+		        		<li>
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">大学</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 20%;background: #8378eb;">
+		        						<span class="sr-only">20% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">103</p>
+		        			</div>
+		        		</li>
+		        		<li>
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">大学</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 20%;background: #8378eb;">
+		        						<span class="sr-only">20% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">103</p>
+		        			</div>
+		        		</li>
+		        		<li>
+		        			<div class="clearfix period_div">
+		        				<span class="period_name" style="">大学</span>
+		        				<div class="progress">
+		        					<div class="progress-bar" style="width: 20%;background: #8378eb;">
+		        						<span class="sr-only">20% Complete (success)</span>
+		        					</div>
+		        				</div>
+		        				<p  class="period_num">103</p>
+		        			</div>
+		        		</li>
+		        </div>
+		  </div>
+		  <div class="box03 row_box" id="box03" style="">
+		  	<i class="topL"></i>
+		  	<i class="topR"></i>
+		  	<i class="bottomL"></i>
+		  	<i class="bottomR"></i>
+		  	<div class="block_title">
+		  		<b class="block_title-left">[</b>
+		  		<span>同学段学校与历史学年的得分比较</span>
+		  		<b class="block_title-right">]</b>
+		    </div>
+		    <div>
+		    	<div class="level" style="top: 13px;">
+		    		<label>选择学段：</label>
+		    		<select class="se-level">
+		    			<option>幼儿园</option>
+		    			<option>小学</option>
+		    			<option>初中</option>
+		    			<option>高中</option>
+		    		</select>
+		    	</div>
+		    	<div id="map1" style="width: 100%;margin-top:15px;"></div>
+		    </div>
+		  	  </div>
+		  <div class="box04 row_box">
+		  	<i class="topL"></i>
+		  	<i class="topR"></i>
+		  	<i class="bottomL"></i>
+		  	<i class="bottomR"></i>
+		  	<div class="block_title">
+		  		<b class="block_title-left">[</b>
+		  		<span>各学段学校不同学年的评估结果</span>
+		  		<b class="block_title-right">]</b>
+		  </div>
+		  <div class="level" style="margin-top:6px;">
+				  	<div style="float: left;">
+				  		<label>选择学段：</label>
+				    		<select class="se-level" style="height: 34px;">
+				    			<option>幼儿园</option>
+				    			<option>小学</option>
+				    			<option>初中</option>
+				    			<option>高中</option>
+				    		</select>
+				  	</div>
+		    		<div class="se-year">
+		    			<ul class="clearfix">
+		    				<li class="icur">本年</li>
+		    				<li>2018</li>
+		    				<li>2017</li>
+		    			</ul>
+		    		</div>
+		    		
+		    	</div>
+		    	<div id="map2" style="width: 100%;margin-top: 32px;"></div>
+		</div>
+		  <div class="box05 row_box" style="width: 100%;float: left;">
+		  	<i class="topL"></i>
+		  	<i class="topR"></i>
+		  	<i class="bottomL"></i>
+		  	<i class="bottomR"></i>
+		  	<div class="block_title">
+		  		<b class="block_title-left">[</b>
+		  		<span>同一个指标不同学校的得分情况</span>
+		  		<b class="block_title-right">]</b>
+		  </div>
+		  <div class="level" style="top:20px">
+		    		<label>选择学段：</label>
+		    		<select class="se-level">
+		    			<option>幼儿园</option>
+		    			<option>小学</option>
+		    			<option>初中</option>
+		    			<option>高中</option>
+		    		</select>
+		    		
+		    			<label style="margin-left: 27px;">选择指标：</label>
+		    		<select class="se-level">
+		    			<option>指标01</option>
+		    			<option>指标02</option>
+		    			<option>指标03</option>
+		    			<option>指标04</option>
+		    		</select>
+		    	</div>
+		    	<div id="map3" style="width: 100%;margin-top: 39px;"></div>
+		</div>
+			  </div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.min.js" ></script>
+		<script>
+//		 $(function(){
+        	
+//      })
+			$(".se-year li").click(function(){
+				$(this).addClass("icur").siblings().removeClass("icur");
+			})
+			//浏览器窗口大小
+			$(function(){
+				getImageHeight();
+			})
+			
+			
+			function getImageHeight(){
+		    var height=$(window).height();
+			var navheight=$(".nav").outerHeight(true)
+//			var rowMarginTop=$(".row").css("margin-top");
+//			rowMarginTop=parseInt(rowMarginTop);
+//			rowMarginTop=Math.abs(rowMarginTop);
+//			var box01MarginBottom=$(".box01").css("margin-bottom");
+//			box01MarginBottom=parseInt(box01MarginBottom);
+//			box01MarginBottom=Math.abs(box01MarginBottom);
+//			var box04MarginBottom=$(".box04").css("margin-bottom");
+//			box04MarginBottom=parseInt(box04MarginBottom);
+//			box04MarginBottom=Math.abs(box04MarginBottom);
+//			var marheight=rowMarginTop+box01MarginBottom+box04MarginBottom;
+			var pjheight=(height-navheight-92)/3;
+			$(".row_box").height(pjheight);
+			$("#map1").height(pjheight-27);
+			$("#map2").height(pjheight-41);
+			$("#map3").height(pjheight-43);
+			$(".period,.dr").height(pjheight-32)
+			$(".bg").height(height/2);
+			
+			$(".period_div").each(function(){
+        		var width=$(this).find(".progress-bar").width();
+        		$(this).find(".period_num").animate({left:width+8+'px'});
+
+        	})
+			}
+			 window.addEventListener("resize", function() {
+            getImageHeight();
+        });
+        
+        //判断是否是火狐浏览器
+         if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){  
+         	
+         	$(".dr,.period").getNiceScroll().show().resize();
+         $(".dr,.period").niceScroll({
+		  cursorwidth:16,
+          cursoropacitymin:1,
+          cursorcolor:'#023e8d',
+          background:'#012a60',
+          cursorborder:'red',
+          cursorborderradius:0,
+          autohidemode:'leave'
+        });  // a world full of color!
+//      return "Firefox";  
+   }  
+    
+	
+		</script>
+		<script type="text/javascript" src="js/echarts.js" ></script>		
+		<script type="text/javascript" src="js/mycharts.js" ></script>
+	</body>
+</html>

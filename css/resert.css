@@ -1,0 +1,28 @@
+body,div,ul,ol,li,a,img,p,h1,h2,h3,h4,h5,dl,dt,form,table,tr,td,span,label,input,select,option,i,em,strong,b{
+	margin: 0;
+	padding: 0;
+}
+body{
+	 font-family: helvetica neue,arial,hiragino sans gb,microsoft yahei,sans-serif;
+}
+li{
+	list-style:none;
+}
+img{
+	border: 0 none;
+	vertical-align: top;
+}
+
+a:hover{
+	color:#999
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

@@ -1,0 +1,181 @@
+.bg{width: 500px;height: 500px;position: absolute;top: 50%;left: 50%;margin-top: -250px;margin-left: -250px;
+animation: myfirst2 15s infinite linear;opacity: .18;}
+#main{width: 95%;margin: 0 auto;}
+.nav{margin-top: 15px;}
+.nav_left{background: #166ae7;width: 25%;height: 28px;position: relative;float: left;margin-top: 11px;}
+.nav_left img,.nav_middle img,.nav_right img{position: absolute;}
+.nav_middle{width: 50%;display: inline-block;text-align:center;line-height:56px;font-size:30px;height:56px;
+position: relative;background: url(../img/middle_kz.png) repeat-x;background-size: 100% 100%;}
+.nav_right{background: #166ae7;width: 25%;height: 28px;position: relative;float: right;margin-top: 11px;}
+.topL,.topR,.bottomL,.bottomR{width: 20px;height: 20px;position: absolute;}
+.topL{border-top: 2px solid #26c6f0;border-left: 2px solid #26c6f0;top: -2px;left: -2px;}
+.topR{border-top: 2px solid #26c6f0;border-right: 2px solid #26c6f0;top: -2px;right: -2px;}
+.bottomL{border-bottom: 2px solid #26c6f0;border-left: 2px solid #26c6f0;bottom: -2px;left: -2px;}
+.bottomR{border-bottom: 2px solid #26c6f0;border-right: 2px solid #26c6f0;bottom: -2px;right: -2px;}
+.row_box{width: 49%;float: left;position: relative;    border: 2px solid #032d60;-webkit-box-shadow: #07417a 0px 0px 10px;-moz-box-shadow: #07417a 0px 0px 10px;box-shadow: inset 0 0 30px #07417a;}
+.box02,.box04{float: right;}
+.box01,.box02{margin-bottom: 20px;}
+.box03,.box04{margin-bottom: 20px;
+/*height: 340px;*/
+position: relative;}
+/*.box05{margin-bottom: 50px;}*/
+.block_title{background-color: #000c3b;width: 178px;margin: -18px auto 0 auto;color: #83c7e3;font-size: 20px;}
+.block_title b{color: #0959d7;}
+.block_title span{color: #accdfe;}
+.box01 .block_title{width: 186px;}
+.box02 .block_title{width: 266px;}
+.box03 .block_title{width: 326px;}
+.box04 .block_title{width: 306px;}
+.box05 .block_title{width: 306px;}
+/*box01*/
+.circle{width: 22%;float: left;margin: 8px 1%;}
+.cr{text-align: center;}
+.cr div{width: 80px;height: 80px;box-sizing: border-box;background-color: #000c3b;border-radius: 50%;border: 8px solid #177bf2 ;color: #fff;
+line-height: 64px;font-size: 30px;margin: 0 auto;}
+.cr p{color: #accdfe;font-size: 16px;margin-top: 10px;}
+/*box2*/
+.progress{
+	/*background: #39414e;*/
+    width: 65%;
+    position: absolute;
+    left: 116px;}
+.progress-bar{background: #177bf2;height: 10px;float: left;}
+.sr-only{position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
+.period{margin-top: 5px;}
+.period_ul{font-size: 14px;padding: 20px 28px 0 8px;}
+.period_div{position: relative;}
+.period_ul li{
+	margin-bottom: 10px;
+	/*margin-bottom: 4%;*/
+	}
+.period_num{color: #accdfe;text-align: right;float: left;margin-top: -3px;position: absolute;margin-left:116px;}
+.period_name{color: #accdfe;float: left;margin-top: -5px;text-align: right;width:112px;margin-right: 7px;}
+@keyframes myfirst2
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(359deg);}
+}
+/*box3*/
+.level{color: #accdfe;padding: 0 0 0 27px;font-size: 16px;position: absolute;z-index: 999999;}
+.se-level{width: 105px;height: 31px;border:2px solid #032d60;background: #000c3b;color:#accdfe;font-size: 16px;}
+/*box4*/
+.se-year {margin-left: 18px;float: left;border: 2px solid #032d60;}
+.se-year li{float: left;height: 31px;line-height: 31px;width:94px;text-align: center;cursor: pointer;}
+.se-year .icur,.se-year li:hover{background: #214398;color: #fff;}
+@media only screen and (max-width: 1485px) {
+	.title{font-size: 24px;}
+}
+@media only screen and (max-width: 1348px) {
+	.title{font-size: 21px;}
+	.cr div{
+		    width: 60px;
+            height: 60px;
+            line-height: 44px;
+            font-size: 25px;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.se-year li{width:72px;}
+}
+
+ /*滚动条样式*/
+        ::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        ::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            /*border-radius: 5px;*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            background: rgba(2,62,141,1);
+        }
+        ::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            border-radius: 0;
+            background: rgba(1,42,96,1);
+        }
+        .period::-moz-scrollbar {/*滚动条整体样式*/
+            width: 16px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        .period::-moz-scrollbar-thumb {/*滚动条里面小方块*/
+            /*border-radius: 5px;*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            background: rgba(2,62,141,1);
+        }
+        .period::-moz-scrollbar-track {/*滚动条里面轨道*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            border-radius: 0;
+            background: rgba(1,42,96,1);
+        }
+        ::-ms-scrollbar {/*滚动条整体样式*/
+            width: 16px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        ::-ms-scrollbar-thumb {/*滚动条里面小方块*/
+            /*border-radius: 5px;*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            background: rgba(2,62,141,1);
+        }
+        ::-ms-scrollbar-track {/*滚动条里面轨道*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            border-radius: 0;
+            background: rgba(1,42,96,1);
+        }
+        ::scrollbar {/*滚动条整体样式*/
+            width: 16px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+        }
+        ::scrollbar-thumb {/*滚动条里面小方块*/
+            /*border-radius: 5px;*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            background: rgba(2,62,141,1);
+        }
+        ::scrollbar-track {/*滚动条里面轨道*/
+            /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+            border-radius: 0;
+            background: rgba(1,42,96,1);
+        }
+        
+@-moz-document url-prefix() {
+            .se-level {
+                -moz-appearance: none;
+				appearance: none;
+				background-image: url("../img/triangle.png");
+				background-repeat: no-repeat;
+				background-position: calc(100% - -4px) 50%;
+				background-size: 27% auto;
+				border-radius: 3px;
+				padding: 0;
+            }
+            overflow-y: scroll;
+			scrollbar-color: transparent transparent;
+			scrollbar-track-color: transparent;
+			-ms-scrollbar-track-color: transparent;
+        }
+        
+@-moz-document url-prefix(http://),url-prefix(https://) {   
+    /* 滚动条颜色 */  
+    scrollbar {   
+       -moz-appearance: none !important;   
+       background: rgb(0,255,0) !important;   
+    }   
+    /* 滚动条按钮颜色 */  
+    thumb,scrollbarbutton {   
+       -moz-appearance: none !important;   
+       background-color: rgb(0,0,255) !important;   
+    }   
+    /* 鼠标悬停时按钮颜色 */  
+      
+    thumb:hover,scrollbarbutton:hover {   
+       -moz-appearance: none !important;   
+       background-color: rgb(255,0,0) !important;   
+    }   
+    /* 隐藏上下箭头 */  
+    scrollbarbutton {   
+       display: none !important;   
+    }   
+    /* 纵向滚动条宽度 */  
+    scrollbar[orient="vertical"] {   
+      min-width: 15px !important;   
+    }   
+}
